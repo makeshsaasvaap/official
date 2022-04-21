@@ -1,26 +1,26 @@
 # official
 
-public class MyThread2 implements Runnable  
-{    
-public void run()  
-{    
-System.out.println("Now the thread is running ...");    
-}    
-    
-// main method  
-public static void main(String argvs[])  
-{   
-// creating an object of the class MyThread2  
-Runnable r1 = new MyThread2();   
-  
-// creating an object of the class Thread using Thread(Runnable r, String name)  
-Thread th1 = new Thread(r1, "My new thread");    
-  
-// the start() method moves the thread to the active state  
-th1.start();   
-  
-// getting the thread name by invoking the getName() method  
-String str = th1.getName();  
-System.out.println(str);  
-}    
-}    
+<form action="action_page.php">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
